@@ -86,9 +86,45 @@ public class testsheepnzStepsDef {
         testsheepnzSteps.resultadoSuma(resultado);
     }
 
-    @Y("selecciono operacion {string}")
-    public void seleccionoOperacion(String operacion) {
+    /*@Y("selecciono operacion {string}")
+    public void seleccionoOperacion() {
         TestsheepnzSteps testsheepnzSteps = new TestsheepnzSteps(driver);
-        testsheepnzSteps.selectOperacion(operacion);
+        testsheepnzSteps.selectOperacion();
+    }*/
+
+    @Y("selecciono operacion multiplicar")
+    public void seleccionoOperacionMultiplicar() {
+        TestsheepnzSteps testsheepnzSteps = new TestsheepnzSteps(driver);
+        testsheepnzSteps.selectOperacionMul();
+    }
+
+    @Y("selecciono operacion dividir")
+    public void seleccionoOperacionDividir() {
+        TestsheepnzSteps testsheepnzSteps = new TestsheepnzSteps(driver);
+        testsheepnzSteps.selectOperacionDiv();
+    }
+
+    @Y("selecciono operacion concatenar")
+    public void seleccionoOperacionConcatenar() {
+        TestsheepnzSteps testsheepnzSteps = new TestsheepnzSteps(driver);
+        testsheepnzSteps.selectOperacionConca();
+    }
+
+    @Y("marco check")
+    public void marcoCheck() {
+        TestsheepnzSteps testsheepnzSteps = new TestsheepnzSteps(driver);
+        testsheepnzSteps.marcarCheck();
+    }
+
+    @Y("limpio cajas de texto")
+    public void limpioCajasDeTexto() {
+        TestsheepnzSteps testsheepnzSteps = new TestsheepnzSteps(driver);
+        testsheepnzSteps.limpiarCajas();
+    }
+
+    @Y("selecciono operacion restar")
+    public void seleccionoOperacionRestar() {
+        TestsheepnzSteps testsheepnzSteps = new TestsheepnzSteps(driver);
+        testsheepnzSteps.selectOperacionRestar();
     }
 }

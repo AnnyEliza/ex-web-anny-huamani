@@ -1,5 +1,4 @@
 package com.nttdata.steps;
-import com.nttdata.page.LoginPage;
 import com.nttdata.page.TestzheepnzPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,12 +26,10 @@ public class TestsheepnzSteps {
     }
 
     public void botonCalcular(){
-        WebElement userInputElement = driver.findElement(TestzheepnzPage.pNumero);
         this.driver.findElement(TestzheepnzPage.btnCalcular).click();
     }
 
     public void resultadoSuma(String resultado){
-        WebElement userInputElement = driver.findElement(TestzheepnzPage.resultado);
         System.out.println("VERR RESULTADOOO " + this.driver.findElement(TestzheepnzPage.resultado).getAttribute("value"));
         this.driver.findElement(TestzheepnzPage.resultado).getAttribute("value").equals(resultado);
 
@@ -40,11 +37,37 @@ public class TestsheepnzSteps {
         assertTrue(verificar);
     }
 
-    public void selectOperacion(String operacion){
-        WebElement userInputElement = driver.findElement(TestzheepnzPage.operacion);
+    public void selectOperacionRestar(){
         this.driver.findElement(TestzheepnzPage.operacion).click();
         this.driver.findElement(TestzheepnzPage.resta).click();
 
+    }
+
+    public void selectOperacionMul(){
+        this.driver.findElement(TestzheepnzPage.operacion).click();
+        this.driver.findElement(TestzheepnzPage.multiplicar).click();
+
+    }
+
+    public void selectOperacionDiv(){
+        this.driver.findElement(TestzheepnzPage.operacion).click();
+        this.driver.findElement(TestzheepnzPage.dividir).click();
+
+    }
+
+    public void selectOperacionConca(){
+        this.driver.findElement(TestzheepnzPage.operacion).click();
+        this.driver.findElement(TestzheepnzPage.concatenar).click();
+
+    }
+
+    public void marcarCheck(){
+        this.driver.findElement(TestzheepnzPage.check).click();
+    }
+
+    public void limpiarCajas(){
+        this.driver.findElement(TestzheepnzPage.pNumero).clear();
+        this.driver.findElement(TestzheepnzPage.sNumero).clear();
     }
 
 }
