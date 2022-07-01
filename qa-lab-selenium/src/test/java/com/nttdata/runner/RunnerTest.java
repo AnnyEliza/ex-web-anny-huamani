@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         stepNotifications = true,
         features = "src/test/resources/features",
         glue = "com.nttdata.stepsdefinitions",
-        tags = "@testLogo"
+        tags = "@Escenario2"
 )
 public class RunnerTest {
 }

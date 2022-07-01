@@ -16,3 +16,4 @@ Característica: Login
   Escenario: Iniciar sesión logo
     Dado que me encuentro en la página de Practica
     Cuando hago clic en el boton sign
+
